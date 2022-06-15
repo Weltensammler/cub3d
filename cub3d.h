@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bschende <bschende@student.42wolfsburg.    +#+  +:+       +#+        */
+/*   By: ben <ben@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 03:06:49 by cschwalm          #+#    #+#             */
-/*   Updated: 2022/06/09 15:12:29 by bschende         ###   ########.fr       */
+/*   Updated: 2022/06/14 15:47:34 by ben              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,12 @@ int		get_map(t_data *data, char *filepath);
 int		read_map_file(t_data *data, char *filepath);
 void	get_map_dimensions(t_data *data, char **map_file);
 void	store_map(t_data *data, char *map_str);
+char	**ft_split_map(const char *s, char c);
+void	get_map_dimensions(t_data *data, char **map_file);
+void	store_map_array(t_data *data, char **map_file);
+void	get_color_texture(t_data *data, char **map_file);
+void	get_texture(t_data *data, char **map_file, int i, char c);
+void	get_color(t_data *data, char **map_file, int i, char c);
 int		check_map(t_data *data);
 int		check_map_characters(t_data *data);
 int		check_map_walls(t_data *data);
