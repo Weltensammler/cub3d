@@ -24,6 +24,8 @@ FILES = 	main.c \
 			$(SRC)init_struct.c \
 			$(MAP)map.c \
 			$(MAP)check_map.c \
+			$(SRC)ft_free.c \
+			$(MAP)map_utils.c \
 
 
 OBJS =		$(FILES:.c=.o)
